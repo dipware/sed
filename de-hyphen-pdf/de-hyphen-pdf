@@ -1,0 +1,9 @@
+/ .*-$/ {
+found=NR+1;
+print "Line " NR;
+print $NF;
+}
+NR==found {
+print $1;
+}
+
